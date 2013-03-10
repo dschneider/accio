@@ -1,0 +1,34 @@
+#!/usr/bin/env ruby
+
+require "thor"
+require "accio"
+
+class AccioCMD < Thor
+  desc "configure", "configures accio with the path of your snippet file"
+  def configure(path)
+    ::Accio.configure(path)
+  end
+
+  desc "groups", "show all groups"
+  def groups
+    ::Accio.show_groups
+  end
+
+  desc "show [GROUP][SNIPPET TITLE]", "show snippets for a specific group"
+  def show(group, snippet = nil)
+    ::Accio.show(group, snippet)
+  end
+
+  desc "s [GROUP][SNIPPET TITLE]", "show snippets for a specific group"
+  alias :s :show
+
+  desc "copy [GROUP][SNIPPET TITLE]", "copy snippets for a specific group"
+  def copy(group, snippet = nil)
+    ::Accio.copy(group, snippet)
+  end
+
+  desc "c [GROUP][SNIPPET TITLE]", "copy snippets for a specific group"
+  alias :c :copy
+end
+
+AccioCMD.start
