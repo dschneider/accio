@@ -10,7 +10,7 @@ Gem::Specification.new do |gem|
   gem.email         = ["sinned.schneider@gmail.com"]
   gem.description   = %q{Accio is a code snippet management tool for the terminal}
   gem.summary       = %q{Accio - A code snippet management tool for the terminal}
-  gem.homepage      = "https://github.com/dschneider/snip"
+  gem.homepage      = "https://github.com/dschneider/accio"
 
   gem.files         = `git ls-files`.split($/)
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
