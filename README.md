@@ -60,4 +60,5 @@ An example snippet file can be found in the spec/fixtures folder.
 
 ## Code Status
 
+[![Build Status](https://travis-ci.org/dschneider/accio.png)](https://travis-ci.org/dschneider/accio)
 [![Code Climate](https://codeclimate.com/github/dschneider/accio.png)](https://codeclimate.com/github/dschneider/accio)
