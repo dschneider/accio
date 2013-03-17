@@ -57,3 +57,7 @@ There are shortcuts like `accio c Ruby ...` and `accio s Ruby` for copy and show
 ## Example Snippet File (snippets.md)
 
 An example snippet file can be found in the spec/fixtures folder.
+
+## Code Status
+
+[![Code Climate](https://codeclimate.com/github/dschneider/accio.png)](https://codeclimate.com/github/dschneider/accio)
